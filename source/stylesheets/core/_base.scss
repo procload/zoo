@@ -1,0 +1,208 @@
+// *************************************
+//
+//   Base
+//   -> Base-level tags (body, p, etc.)
+//
+// *************************************
+
+
+// -------------------------------------
+//   Global
+// -------------------------------------
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: $background-color;
+  color: $text-color;
+  line-height: $base-line-height;
+  font-size: 100%;
+  font-family: $font-family-base;
+}
+
+img {
+  max-width: 100%;
+}
+
+// -------------------------------------
+//  Typography
+// -------------------------------------
+
+// ----- Headlines ----- //
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+  margin: 0;
+  line-height: 1.25;
+  font-family: $font-family-headings;
+  font-weight: 600;
+}
+
+
+h1 {
+  font-size: calc-em(64px);
+  font-weight: normal;
+}
+h2 {
+  font-size: 1.5em;
+}
+
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: calc-em(16px);
+  font-weight: 500;
+  color: lighten($gray, 30%);
+  margin: 0 0 calc-em(4px, 16px);
+}
+h4 {
+  font-size: calc-em(16px);
+  margin-bottom: calc-em(4px, 16px);
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 1em;
+  margin-bottom: .25em;
+}
+h6 {
+  font-size: 0.85em;
+  font-style: italic;
+  margin-bottom: .25em;
+}
+
+h1 + h1,
+h2 + h2,
+h3 + h3,
+h4 + h4,
+h5 + h5,
+h6 + h6 {
+  margin-top: 1em;
+}
+
+
+// ----- Text blocks ----- //
+
+p {
+  margin: 0 0 1em 0;
+  font-family: $font-family-serif;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.disclaimer {
+    font-size: calc-em(13px);
+  }
+}
+
+blockquote {
+  font-size: calc-em(14px);
+  line-height: calc-em(27px, 18px);
+  color: lighten($text-color, 15%);
+  border-left: 3px solid $gray-lighter;
+  margin-left: calc-em(16px, 18px);
+  padding-left: calc-em(16px, 18px);
+  font-style: italic;
+}
+
+
+// ----- Inline elements ----- //
+
+em {
+}
+
+strong {
+}
+
+// ----- List elements ----- //
+
+dt {
+  margin-bottom: 0.5em;
+}
+dd {
+  margin-bottom: 1.5em;
+}
+
+ul, ol {
+  font-size: calc-em(16px);
+  li {
+    margin-bottom: calc-em(4px, 16px);
+  }
+  ul, ol {
+    font-size: calc-em(14px, 16px);
+  }
+}
+
+// ----- Block elements ----- //
+hr {
+  border: none;
+  height: calc-em(1px);
+  background: $gray-light;
+  margin: calc-em(16px) 0;
+}
+
+// -------------------------------------
+//  Links
+// -------------------------------------
+a {
+  text-decoration:    none;
+  transition:         color .3s ease-in-out;
+}
+
+a:link    {
+  color: $link-color;
+  transition:         color .3s ease-in-out;
+}
+
+a:visited {
+  color: $link-color;
+}
+
+a:hover   {
+  color: darken($link-color, 10%);
+  transition:         color .3s ease-in-out;
+}
+
+a:active  {
+  color: darken($link-color, 10%);
+  transition:         color .3s ease-in-out;
+}
+
+// -------------------------------------
+//  Forms
+// -------------------------------------
+
+input {
+  &[type="text"] {
+    box-shadow: none;
+    border-radius: 0;
+    background: $gray-lighter;
+    &:focus,
+    &:active {
+      background: $white;
+    }
+  }
+}
+
+label,
+label.control-label {
+  font-size: calc-em(13px);
+}
+
+legend {
+  font-size: calc-em(14px);
+  margin: 0 0 calc-em(7px, 14px) 0;
+}

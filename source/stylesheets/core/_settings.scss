@@ -1,0 +1,63 @@
+// *************************************
+//
+//   Settings
+//   -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+
+// Colors
+// --------------------------
+$brand-primary:       #477DCA;
+$brand-secondary:     #5F8C93;
+$brand-tertiary:      #AB977D;
+
+$alert:               #FFE84A;
+$error:               #FF0005;
+$warning:             $alert;
+$success:             #DFF0D8;
+
+$link-color:          #6791ac;
+
+$white:               #FFF;
+$gray:                #555;
+$gray-light:          #EAEAEA;
+$gray-lighter:        #F7F7F7;
+$black:               #090A0E; // Never use #000 for black (http://ianstormtaylor.com/design-tip-never-use-black/)
+
+$text-color:          $gray;
+$background-color:    $white;
+
+// Fonts
+// --------------------------
+//
+
+$base-font-size:          16px;
+$base-line-height:        1.5;
+$font-family-sans-serif:  'Gotham SSm A', 'Gotham SSm B', helvetica, sans-serif;
+$font-family-serif:       'Chronicle SSm A', 'Chronicle SSm B', georgia, serif;
+$font-family-base:        $font-family-sans-serif;
+$font-family-headings:    $font-family-sans-serif;
+
+// Font Stack
+///////////////////////////////////////////////////////////////////////////////
+
+// Susy Grid system
+// --------------------------
+
+$susy: (
+  columns: 16,
+  column-width: 3em,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: split
+);
