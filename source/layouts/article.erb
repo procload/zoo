@@ -1,1 +1,22 @@
-Article Layout
+---
+nav: 'writing'
+---
+
+<% content_for :page_classes do %>writing<% end %>
+
+<% wrap_layout :layout do %>
+  <article>
+    <header>
+      <h1><%= current_article.title %></h1>
+    </header>
+
+    <div class="article-body">
+      <%= current_article.body %>
+    </div>
+    <!-- /article-body -->
+
+    <footer class="article-footer">
+      <time class="published updated" pubdate="" datetime="<%= current_article.date.strftime('%y-%m-%e %H:%M:%S %z') %>"><%= current_article.date.strftime('%A, %B %d, %Y') %></time>
+    </footer>
+  </article>
+<% end %>

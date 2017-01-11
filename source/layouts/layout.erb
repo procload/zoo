@@ -8,21 +8,61 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>RCM</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Ryan Clark Merrill</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Meta Data -->
+  <meta name="author" content="Ryan Clark Merrill">
+  <meta name="Description" content="I am a hungry designer and developer working and living in Cincinnati, Ohio. I like my friends old, my music loud and my work tough.">
+  <meta name="google-site-verification" content="QjVRDPMPKFZY1BGtQnwqrQ3J-wFck8wJUaq8MoqzilA" />
+  <meta name="Copyright" content="Ryan Clark Merrill <%= copyright_years(2011) %>. All Rights Reserved.">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- Opengraph Data -->
+  <meta property="og:title" content="Ryan Clark Merrill"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:url" content="http://www.ryanmerrill.net/"/>
+  <meta property="og:image" content=""/>
+  <meta property="og:site_name" content="Ryan Clark Merrill"/>
+  <meta property="og:description" content="I am a hungry designer and developer working and living in Cincinnati, Ohio. I like my friends old, my music loud and my work tough."/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=8jebEpyaEe">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png?v=8jebEpyaEe" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png?v=8jebEpyaEe" sizes="16x16">
+  <link rel="manifest" href="/manifest.json?v=8jebEpyaEe">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=8jebEpyaEe" color="#6aa7cf">
+  <link rel="shortcut icon" href="/favicon.ico?v=8jebEpyaEe">
+  <meta name="theme-color" content="#ffffff">
 
   <%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
 
-  <%= javascript_include_tag "libs/modernizr" %>
+  <script src="https://use.typekit.net/ekl6yta.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <!-- Load pretty print for code snippets -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
   <%= stylesheet_link_tag "application" %>
 
 </head>
-<body onload="prettyPrint()" class="<%= page_classes %> ">
+<body class="<%= page_classes %> <%= yield_content :page_classes %>">
   <header class="site-header">
-    <div class="header-content">
-    </div>
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="/" title="Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 185.66"><defs><style>.cls-1{fill:none;clip-rule:evenodd;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#010101;}</style><clipPath id="clip-path"><path class="cls-1" d="M98.8 49a4.2 4.2 0 0 1 .7 4.8l-60.2 129a5 5 0 0 1-4.7 3 9.4 9.4 0 0 1-1.6-.4 4.8 4.8 0 0 1-2.8-2 4.2 4.2 0 0 1-.5-3.4l22-90.2L6.4 101a6 6 0 0 1-1.4.2 5.2 5.2 0 0 1-3.4-1.2A4.2 4.2 0 0 1 0 95.6l22.6-92A4.8 4.8 0 0 1 24.3 1a5 5 0 0 1 3-1h36.8a5 5 0 0 1 3.6 1.4A4.4 4.4 0 0 1 69 4.7a4.6 4.6 0 0 1-.5 2l-19 51.6 44-11a6 6 0 0 1 1.5 0 5.2 5.2 0 0 1 3.8 1.6z"/></clipPath></defs><title>Artboard 1</title><path class="cls-2 cls-3" d="M-.6-.6h101v186.8H-.5z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="/work" title="Work" class="<%= 'active' if current_page.data.nav == 'work' %>">Work</a>
+        </li>
+        <li>
+          <a href="/writing" title="Writing" class="<%= 'active' if current_page.data.nav == 'writing' %>">Writing</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <!-- /site-header -->
 
@@ -35,6 +75,13 @@
     </section><!-- /footer-content -->
   </footer><!-- /site-footer -->
 
-  <%= javascript_include_tag "public" %>
+  <!-- Asynchronous Google Analytics snippet. -->
+  <script>
+    var _gaq=[['_setAccount','UA-8516683-1'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
 </body>
 </html>
