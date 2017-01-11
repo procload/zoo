@@ -39,9 +39,9 @@
 
 // ----- Container ----- //
 // Assumes using Susy grid for layout
-%container {
-  @include container;
-}
+//%container {
+//  @include container;
+//}
 
 // -------------------------------------
 //   Functions
@@ -115,7 +115,7 @@
 */
 
 // Breakpoint Styles Here
-/* 
+/*
   .schedule-component {
       float: left;
       width: 100%;
@@ -132,7 +132,7 @@
 */
 
 // -------------------------------------
-//  Typographic Mixins 
+//  Typographic Mixins
 // -------------------------------------
 
 // ----- Replace Text ----- //
@@ -177,7 +177,7 @@
     @content;
   }
 
-  &:-ms-input-placeholder {  
+  &:-ms-input-placeholder {
     @content;
   }
 }
@@ -219,8 +219,8 @@
     // 1. Is the offset listed in $args? (not false)
     // 2. Is the offset value within the list range?
     // 3. Is the offset value valid?
-    @if $i                                      // 1 
-    and $i + 1 <= length($args)                 // 2 
+    @if $i                                      // 1
+    and $i + 1 <= length($args)                 // 2
     and type-of( nth($args, $i + 1) ) == number /* 3 */ {
       // If everything is okay we assign the according value to the current offset
       #{$o}: nth($args, $i + 1);

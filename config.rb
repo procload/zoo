@@ -1,6 +1,3 @@
-# Load Susy for our grid system
-require "susy"
-
 # Use Bourbon for SASS mixins and helpers
 require "bourbon"
 

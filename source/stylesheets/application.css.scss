@@ -19,11 +19,7 @@
 // ----- Bourbon ----- //
 @import "bourbon";
 
-// ----- Susy ----- //
-@import "susy";
-
 // ----- Prettify ----- //
-@import "libs/prettify";
 @import "libs/pretty_solarized";
 
 // -------------------------------------
@@ -104,6 +100,9 @@ main,
 }
 
 pre.prettyprint {
+  width: 100%;
+  margin: 0 0 calc-em(16px);
+  
   @include respond-to(34.375em) {
     width: 130%;
   }

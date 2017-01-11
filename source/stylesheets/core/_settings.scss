@@ -47,18 +47,3 @@ $font-family-mono:        "fira-mono-1", "fira-mono-2", monospace;
 $font-family-serif:       'Chronicle SSm A', 'Chronicle SSm B', georgia, serif;
 $font-family-base:        $font-family-sans-serif;
 $font-family-headings:    $font-family-sans-serif;
-
-// Font Stack
-///////////////////////////////////////////////////////////////////////////////
-
-// Susy Grid system
-// --------------------------
-
-$susy: (
-  columns: 16,
-  column-width: 3em,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: split
-);
