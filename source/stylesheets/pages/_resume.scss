@@ -31,7 +31,6 @@ body.resume, {
     margin-bottom: calc-em(8px);
 
     h1 {
-      font-weight: 700;
       font-size: calc-em(18px);
       margin-bottom: calc-em(3px, 18px);
     }
@@ -41,6 +40,7 @@ body.resume, {
       font-size: calc-em(14px);
     }
   }
+  
   .job-highlights {
     li {
       font-style: normal;
