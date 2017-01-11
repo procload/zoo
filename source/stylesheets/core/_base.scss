@@ -129,6 +129,10 @@ blockquote {
   padding-left: calc-em(16px, 14px);
 }
 
+code, kbd, pre, samp {
+  font-family: $font-family-mono; 
+  font-size: 1em;
+}
 
 // ----- Inline elements ----- //
 
