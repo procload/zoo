@@ -1,2 +1,2 @@
-# ryan.cm
-Ryan.cm
+# Personal website
+Kinda boring.
