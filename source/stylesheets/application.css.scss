@@ -37,6 +37,7 @@
 // -------------------------------------
 @import "pages/blog";
 @import "pages/work";
+@import "pages/resume";
 
 // -------------------------------------
 //   Site-wide elements
@@ -102,7 +103,7 @@ main,
 pre.prettyprint {
   width: 100%;
   margin: 0 0 calc-em(16px);
-  
+
   @include respond-to(34.375em) {
     width: 130%;
   }
