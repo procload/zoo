@@ -112,3 +112,14 @@ pre.prettyprint {
 p.intro {
   margin-bottom: calc-em(48px);
 }
+
+.x8451 {
+  figure {
+    width: 100%;
+    margin: 0 0 calc-em(16px);
+
+    @include respond-to(34.375em) {
+      width: 130%;
+    }
+  }
+}

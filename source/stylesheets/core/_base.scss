@@ -75,6 +75,12 @@ h2 {
       color: $link-color;
     }
   }
+
+  &.section-header {
+    border-bottom: 1px solid $gray-lighter;
+    padding-bottom: calc-em(6px, 24px);
+    margin-bottom: calc-em(12px, 24px);
+  }
 }
 
 h3 {
