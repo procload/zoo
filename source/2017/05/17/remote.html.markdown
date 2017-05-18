@@ -1,6 +1,6 @@
 ---
 title: Tips for Remote Work
-date: 2016-05-17 16:21 UTC
+date: 2017-05-17 16:21 UTC
 tags: remote, work, 8451, Food52, working
 ---
 
