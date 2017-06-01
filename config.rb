@@ -48,6 +48,9 @@ end
 # No layout for XML
 page "/feed.xml", layout: false
 
+# No layout for JSON Feed
+page "/feed.json", layout: false
+
 # Sets the markdown to Kramdown so Github Pages stops throwing errors
 set :markdown_engine, :kramdown
 
@@ -65,6 +68,10 @@ helpers do
     else
       start_year.to_s + '-' + end_year.to_s
     end
+  end
+  
+  def article_url(article)
+    "http://ryanmerrill.net/"+article.path.gsub(/\s+/, "")
   end
 end
 
