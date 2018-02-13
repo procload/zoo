@@ -1,6 +1,6 @@
 ---
 title: Accessibility Basics for Developers
-date: 2018-02-13 22:00 UTC
+date: 2018-02-13 12:00 UTC
 tags: accessibility, work, 8451, working
 ---
 It's common to think that web accessibility only applies to screen readers and blind users, but the reality is much larger and more nuanced. With close to 25 percent of adults in the United States having some sort of disability, it's something too valuable to ignore. Breaking down accessibility into physical and environmental impairments can help us emphasize with our users' diverse abilities.
