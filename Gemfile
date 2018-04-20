@@ -18,6 +18,9 @@ gem 'middleman-livereload'
 # Use Kramdown for Markdown
 gem 'kramdown', '~> 1.4.0'
 
+# Redcarpet
+gem 'redcarpet'
+
 # Use Nokogiri for blog summaries
 gem 'nokogiri'
 
