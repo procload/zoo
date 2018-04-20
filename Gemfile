@@ -38,3 +38,6 @@ gem 'middleman-blog'
 
 # Middleman
 gem 'middleman'
+
+# Contenful CMS
+gem 'contentful_middleman'

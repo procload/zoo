@@ -45,6 +45,12 @@ activate :blog do |blog|
 
 end
 
+# Contentful CMS
+activate :contentful do |f|
+  f.space         = { blogPost: 'yz29ns0gm87z' }
+  f.access_token  = 'f1efe4eae477ec20e80addb6d89c682b51c80bbb09b0dc0c031c773ad3cbfdff'
+end
+
 # No layout for XML
 page "/feed.xml", layout: false
 
@@ -69,7 +75,7 @@ helpers do
       start_year.to_s + '-' + end_year.to_s
     end
   end
-  
+
   def article_url(article)
     "http://ryanmerrill.net/"+article.path.gsub(/\s+/, "")
   end
