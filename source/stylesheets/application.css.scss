@@ -47,7 +47,7 @@
 
 .site-header {
   background: #f7f7f7;
-  padding: rem(20px) 0;
+  padding: rem(10px) 0;
   margin-bottom: rem(32px);
 
   .header-container {
@@ -68,8 +68,16 @@
   .c-site-nav {
     li a {
       color: #555;
+      display: block;
       font-size: rem(14px);
-      padding: 0 rem(20px);
+      padding: rem(10px) rem(20px);
+    }
+
+    li {
+      &.active {
+        border-bottom: 2px solid #000;
+      }
+
     }
   }
 }
@@ -88,6 +96,7 @@ main {
 .header-grid {
   @include grid-column(12);
   display: flex;
+  align-items: center;
 }
 
 .main-image {
