@@ -23,12 +23,6 @@ body {
   line-height: $base-line-height;
   font-size: 100%;
   font-family: $font-family-base;
-  margin-top: calc-em(20px);
-  margin: calc-em(20px);
-
-  @include respond-to(450px) {
-    margin: 10% 0 10% 10%;
-  }
 }
 
 img {

@@ -44,3 +44,5 @@ gem 'middleman'
 
 # Contenful CMS
 gem 'contentful_middleman'
+
+gem "neat"

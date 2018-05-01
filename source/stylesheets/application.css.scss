@@ -11,115 +11,49 @@
 // -------------------------------------
 
 // ----- Settings ----- //
-@import "core/settings";
+@import 'core/settings';
+
+// ----- Base ----- //
+@import 'core/base';
 
 // ----- Normalize ----- //
-@import "libs/normalize";
+@import 'libs/normalize';
 
 // ----- Bourbon ----- //
-@import "bourbon";
+@import 'bourbon';
 
 // ----- Prettify ----- //
-@import "libs/pretty_solarized";
+@import 'libs/pretty_solarized';
+
+@import 'neat';
 
 // -------------------------------------
 //   Core
 // -------------------------------------
 
 // ----- Helpers ----- //
-@import "core/helpers";
+@import 'core/helpers';
 
-// ----- Base ----- //
-@import "core/base";
 
 // -------------------------------------
 //   Pages
 // -------------------------------------
-@import "pages/blog";
-@import "pages/work";
-@import "pages/resume";
 
 // -------------------------------------
 //   Site-wide elements
 // -------------------------------------
 
-.site-header,
-main,
-.site-footer {
-  max-width: calc-em(380px);
-}
-
 .site-header {
-  margin-bottom: calc-em(48px);
-}
+  background: #f7f7f7;
+  padding: rem(20px) 0;
 
-// ----- Site Nav ----- //
-.site-nav ul {
-  @include display(flex);
-  @include justify-content(space-between);
-
-  svg {
-    position: relative;
-    top: 3px;
-    height: 17px;
-
-    .cls-3 {
-      transition: fill .1s ease-in-out;
-    }
-
-    &:hover {
-      .cls-3 {
-        fill: $link-color;
-      }
-    }
-  }
-
-  a {
-    color: lighten($text-color, 10%);
-
-    &:hover,
-    &:active,
-    &:focus,
-    &.active {
-      color: $link-color;
-    }
-
-    &.active {
-      border-bottom: 2px solid $link-color;
-    }
+  .c-site-nav {
+    max-width: rem(1200px);
+    margin: 0 auto;
   }
 }
 
-// -------------------------------------
-//  One-off or random
-// -------------------------------------
-
-.social-links {
-  li {
-    margin-right: calc-em(20px);
-  }
-}
-
-pre.prettyprint {
-  width: 100%;
-  margin: 0 0 calc-em(16px);
-
-  @include respond-to(34.375em) {
-    width: 130%;
-  }
-}
-
-p.intro {
-  margin-bottom: calc-em(48px);
-}
-
-.x8451 {
-  figure {
-    width: 100%;
-    margin: 0 0 calc-em(16px);
-
-    @include respond-to(34.375em) {
-      width: 130%;
-    }
-  }
+main {
+  max-width: rem(1200px);
+  margin: 0 auto;
 }
