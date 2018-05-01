@@ -99,7 +99,23 @@
 }
 
 .page-content {
+}
+
+.fact-header {
   @include grid-column(12);
+}
+
+.fact-section {
+  @extend %group;
+  margin-bottom: rem(32px);
+}
+
+.fact-image {
+  @include grid-column(4);
+}
+
+.facts {
+  @include grid-column(8);
 }
 
 
@@ -115,4 +131,12 @@
     background-size: cover;
     background-position: 100% 20%;
   }
+}
+
+h3 {
+  font-size: rem(18px);
+}
+
+p {
+  font-size: rem(14px);
 }
