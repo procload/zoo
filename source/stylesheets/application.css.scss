@@ -82,8 +82,10 @@
 }
 
 .section-header {
+  max-width: rem(1200px);
+  margin: 0 auto;
   @include grid-column(12);
-  margin-bottom: rem(32px);
+  margin-bottom: rem(24px);
 }
 
 .header-grid {
@@ -98,8 +100,6 @@
   @include grid-container;
 }
 
-.page-content {
-}
 
 .fact-header {
   @include grid-column(12);
@@ -108,20 +108,49 @@
 .fact-section {
   @extend %group;
   margin-bottom: rem(32px);
+  background: #F3F6F9;
+  border-radius: 3px;
+  padding: rem(20px);
 }
 
 .fact-image {
-  @include grid-column(4);
+  padding: 0 rem(20px);
+
+  img {
+    width: 100%;
+    border-radius: 3px;
+
+    @include respond-to(560px) {
+      width: auto;
+    }
+  }
+
+  @include respond-to(560px) {
+    padding: 0;
+    @include grid-column(4);
+  }
 }
 
 .facts {
-  @include grid-column(8);
+  padding: 0 rem(20px);
+  @include respond-to(560px) {
+    padding: 0;
+    @include grid-column(8);
+  }
 }
 
+.fact {
+  margin-bottom: rem(16px);
+}
+
+h2 {
+  font-size: rem(21px);
+  margin-bottom: rem(16px);
+}
 
 .main-image {
   height: rem(200px);
-  margin-bottom: rem(32px);
+  margin-bottom: rem(24px);
   background:transparent url('/images/tortoise.jpg') no-repeat 100% 100%;
   background-size: cover;
   background-position: 100% 20%;
@@ -133,8 +162,12 @@
   }
 }
 
+h2 {
+  color: #2EA338;
+}
 h3 {
-  font-size: rem(18px);
+  font-size: rem(16px);
+  color: #2EA338;
 }
 
 p {
