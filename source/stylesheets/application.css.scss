@@ -67,6 +67,7 @@
 
   .c-site-nav {
     li a {
+      color: #555;
       font-size: rem(14px);
       padding: 0 rem(20px);
     }
@@ -77,6 +78,16 @@ main {
   max-width: rem(1200px);
   margin: 0 auto;
   @include grid-container;
+}
+
+.section-header {
+  @include grid-column(12);
+  margin-bottom: rem(32px);
+}
+
+.header-grid {
+  @include grid-column(12);
+  display: flex;
 }
 
 .main-image {
