@@ -83,9 +83,6 @@
 }
 
 main {
-  max-width: rem(1200px);
-  margin: 0 auto;
-  @include grid-container;
 }
 
 .section-header {
@@ -97,6 +94,13 @@ main {
   @include grid-column(12);
   display: flex;
   align-items: center;
+}
+
+
+.page-container {
+  max-width: rem(1200px);
+  margin: 0 auto;
+  @include grid-container;
 }
 
 .main-image {
