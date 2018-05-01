@@ -100,6 +100,10 @@
   @include grid-container;
 }
 
+.page-content {
+  clear: both;
+}
+
 
 .fact-header {
   @include grid-column(12);
@@ -109,12 +113,18 @@
   @extend %group;
   margin-bottom: rem(32px);
   background: #F3F6F9;
+  border: 1px solid darken(#f3f6f9, 5%);
   border-radius: 3px;
   padding: rem(20px);
+  margin: 0 rem(20px) rem(32px);
+
+  @include respond-to(560px) {
+    margin: 0 0 rem(32px) 0;
+  }
 }
 
 .fact-image {
-  padding: 0 rem(20px);
+  padding: 0 rem(10px);
 
   img {
     width: 100%;
@@ -132,7 +142,7 @@
 }
 
 .facts {
-  padding: 0 rem(20px);
+  padding: 0 rem(10px);
   @include respond-to(560px) {
     padding: 0;
     @include grid-column(8);
