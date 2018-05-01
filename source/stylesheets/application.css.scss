@@ -10,6 +10,8 @@
 //   External Libraries & Settings
 // -------------------------------------
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
 // ----- Settings ----- //
 @import 'core/settings';
 
@@ -45,15 +47,42 @@
 
 .site-header {
   background: #f7f7f7;
-  padding: 0 rem(20px);
+  padding: rem(20px) 0;
+  margin-bottom: rem(32px);
 
-  .c-site-nav {
+  .header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     max-width: rem(1200px);
     margin: 0 auto;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    color: #555;
+    font-weight: bold;
+    margin-right: rem(24px);
+  }
+
+  .c-site-nav {
+    li a {
+      font-size: rem(14px);
+      padding: 0 rem(20px);
+    }
   }
 }
 
 main {
   max-width: rem(1200px);
   margin: 0 auto;
+  @include grid-container;
+}
+
+.main-image {
+  @include grid-column(5);
+}
+
+.page-content {
+  @include grid-column(7);
 }

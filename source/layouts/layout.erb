@@ -40,7 +40,10 @@
 <body class="<%= page_classes %> <%= yield_content :page_classes %>">
 
   <header class="site-header">
-    <%= partial "partials/nav" %>
+    <div class="header-container">
+      <%= link_to "Tortoises!", "/", class: "logo" %>
+      <%= partial "partials/nav" %>
+    </div>
   </header>
   <!-- /site-header -->
 
