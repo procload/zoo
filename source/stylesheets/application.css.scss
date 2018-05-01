@@ -106,6 +106,9 @@
 .main-image {
   height: rem(200px);
   margin-bottom: rem(32px);
+  background:transparent url('/images/tortoise.jpg') no-repeat 100% 100%;
+  background-size: cover;
+  background-position: 100% 20%;
 
   .diet & {
     background:transparent url('/images/tortoise.jpg') no-repeat 100% 100%;
