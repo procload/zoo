@@ -99,9 +99,13 @@ h1, h2, p {
 }
 
 .section-header {
+  @extend %group;
   max-width: rem(1200px);
   margin: 0 auto;
   margin-bottom: rem(24px);
+
+  margin-left: rem(20px);
+  margin-right: rem(20px);
 
   .fun & {
     @include grid-column(12);
@@ -116,6 +120,8 @@ h1, h2, p {
   > img {
     max-width: 200px;
     max-height: 232px;
+    margin: 0 auto;
+    display: block;
     @include respond-to(640px) {
       @include grid-column(4);
     }
