@@ -99,13 +99,17 @@ h1, h2, p {
   }
 
   > div {
-    @include grid-column(8);
+    @include respond-to(640px) {
+      @include grid-column(8);
+    }
   }
 
   > img {
-    @include grid-column(4);
     max-width: 200px;
     max-height: 232px;
+    @include respond-to(640px) {
+      @include grid-column(4);
+    }
   }
 }
 
