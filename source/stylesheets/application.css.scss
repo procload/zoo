@@ -58,11 +58,14 @@ h1, h2, p {
   padding: rem(10px) 0;
 
   .header-container {
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
     max-width: rem(1200px);
     margin: 0 auto;
+
+    @include respond-to(640px) {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 
   .logo {
@@ -70,6 +73,12 @@ h1, h2, p {
     color: #555;
     font-weight: bold;
     margin-right: rem(24px);
+    margin-left: rem(20px);
+
+    @include respond-to(640px) {
+      margin-left: 0;
+    }
+
   }
 
   .c-site-nav {
@@ -114,9 +123,13 @@ h1, h2, p {
 }
 
 .header-grid {
-  @include grid-column(12);
-  display: flex;
-  align-items: center;
+
+  @include respond-to(640px) {
+    @include grid-column(12);
+    display: flex;
+    align-items: center;
+
+  }
 }
 
 .page-container {
