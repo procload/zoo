@@ -92,8 +92,21 @@ h1, h2, p {
 .section-header {
   max-width: rem(1200px);
   margin: 0 auto;
-  @include grid-column(12);
   margin-bottom: rem(24px);
+
+  .fun & {
+    @include grid-column(12);
+  }
+
+  > div {
+    @include grid-column(8);
+  }
+
+  > img {
+    @include grid-column(4);
+    max-width: 200px;
+    max-height: 232px;
+  }
 }
 
 .header-grid {
