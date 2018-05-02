@@ -141,8 +141,20 @@ body {
   padding: rem(20px);
   margin: 0 rem(20px) rem(32px);
 
+
+  @include respond-to(1200px) {
+
+  }
+
   @include respond-to(560px) {
     margin: 0 0 rem(32px) 0;
+    margin-left: rem(20px);
+    margin-right: rem(20px);
+  }
+
+  @include respond-to(1200px) {
+    margin: 0 0 rem(32px) 0;
+
   }
 }
 
