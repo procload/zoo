@@ -45,6 +45,14 @@
 //   Site-wide elements
 // -------------------------------------
 
+body {
+  background: transparent url('../images/pattern.jpg') repeat;
+}
+
+h1, h2, p {
+  color: #Fff;
+}
+
 .site-header {
   background: #f7f7f7;
   padding: rem(10px) 0;
@@ -112,9 +120,9 @@
 .fact-section {
   @extend %group;
   margin-bottom: rem(32px);
-  background: #F3F6F9;
+  background: #1F7E27;
   border: 1px solid darken(#f3f6f9, 5%);
-  border-radius: 3px;
+  border-radius: 12px;
   padding: rem(20px);
   margin: 0 rem(20px) rem(32px);
 
@@ -129,7 +137,7 @@
 
   img {
     width: 100%;
-    border-radius: 3px;
+    border-radius: 100%;
 
     @include respond-to(560px) {
       width: auto;
@@ -153,6 +161,9 @@
 
 .fact {
   margin-bottom: rem(16px);
+  a, p {
+    color: #FFF;
+  }
 }
 
 h2 {
@@ -175,13 +186,40 @@ h2 {
 }
 
 h2 {
-  color: #2EA338;
+  color: #FFF;
 }
 h3 {
   font-size: rem(16px);
-  color: #2EA338;
+  color: #FFF;
 }
 
 p {
   font-size: rem(14px);
+}
+
+.videos {
+  @extend %group;
+  margin-bottom: rem(32px);
+
+  .fact-header {
+    @extend %group;
+  }
+
+  .video {
+    clear: both;
+    margin: 0 rem(20px) rem(20px);
+
+    @include respond-to(640px) {
+      margin: 0;
+      clear: none;
+      @include grid-column(6);
+    }
+  }
+}
+
+
+.gifs {
+  .gif {
+    @include grid-column(4);
+  }
 }
