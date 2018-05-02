@@ -4,103 +4,72 @@
 <div class="page-container">
   <header class="section-header">
     <div>
-      <h1>Learn with Toby the Galapagos Tortoise</h1>
-      <p>The Galapogos Tortoise is the world's "rarest living creature" according to the Guinness Book of Records. This site was created to inform others about Galapagos Tortoises and share our love of this amazing species.</p>
+      <h1>Welcome to the Cincinnati Zoo!</h1>
+      <p>The Zoological Society of Cincinnati was founded in 1873 and officially opened its doors in 1875, making the Cincinnati Zoo & Botanical Garden the second oldest Zoo in the United States. The Zoo’s original animal collection was very small, originally consisting of just eight monkeys, two grizzly bears, three deer, six raccoons, two elk, a buffalo, a hyena, a tiger, an alligator, a circus elephant, and over four hundred birds, including a talking crow. The Zoo was founded on 65 acres in the middle of the city, and since then has acquired some of the surrounding blocks and several reserves in Cincinnati’s suburbs. Currently, we have 5 awesome animals for you to learn about, and they are listed below.</p>
     </div>
-    <%= image_tag "images/toby.png" %>
   </header>
 
   <div class="page-content">
-    <section class="fact-section" id="eat">
-      <header class="fact-header">
-        <h2>What does a Galapagos Tortoise Eat?</h2>
-      </header>
+    <header class="fact-header">
+      <h2>Featured Animals!</h2>
+    </header>
+    <section class="fact-section">
       <div class="fact-image">
-        <%= image_tag "images/tortoise-2.jpg" %>
+        <%= link_to image_tag("images/tortoisey.jpg"), "http://procload.github.com/tortoise" %>
       </div>
       <div class="facts">
         <div class="fact">
-          <h3>The Diet of a Galapagos Tortoise</h3>
-          <p>Mostly green vegetation, such as grass, leaves, tree bark, berries and lichen</p>
-        </div>
-        <div class="fact">
-          <h3>How much and how often do they eat?</h3>
-          <p>They eat very slowly, but can consume up to 80 pounds of food a day. They can go up to one year without food or water!</p>
-        </div>
-        <div class="fact">
-          <h3>How do they get food?</h3>
-          <p>They forage for food in their surroundings.</p>
-        </div>
-        <div class="fact">
-          <h3>Natural Surroundings</h3>
-          <p>Volcanic lowlands and shrub land</p>
+          <h3><a href="http://procload.github.com/tortoise">Tortoises are the Best!</a></h3>
+          <p>The Galapogos Tortoise is the world's "rarest living creature" according to the Guinness Book of Records. They have lived on the Galapagos Islands for over 3 million years! Galapagos tortoises are about 4 to 5 feet in length, and weigh up to 500 pounds! A group of tortoises is called a creep.</p>
+          <p><%= link_to "Learn More", "http://procload.github.com/tortoise" %></p>
         </div>
       </div>
     </section>
-
-    <section class="fact-section" id="live">
-      <header class="fact-header">
-        <h2>Where do Galapagos Tortoises Live?</h2>
-      </header>
+    <section class="fact-section">
       <div class="fact-image">
-        <%= image_tag "images/tortoise-3.jpg" %>
+        <%= link_to image_tag("images/elephant.jpg"), "https://scotthysell.wixsite.com/myelephants" %>
       </div>
       <div class="facts">
         <div class="fact">
-          <h3>Natural Surroundings</h3>
-          <p>They only live on the Galapagos Islands</p>
-        </div>
-        <div class="fact">
-          <h3>Where can you find them?</h3>
-          <p>They have lived on the Galapagos Islands for 3 million years!</p>
-        </div>
-        <div class="fact">
-          <h3>Where does the animal make it home?</h3>
-          <p>Offspring do not remain with their parents. Upon hatching, they take several weeks to dig out and then they are left to fend for themselves.</p>
+          <h3><a href="https://scotthysell.wixsite.com/myelephants">Elephants!</a></h3>
+          <p>An elephant is a large mammal found throughout Africa and Asia.  They have several distinctive features, the most notable is a long trunk used for breathing, lifting water and grasping objects.  Their incisors grow into tusks, which can serve as weapons and as tools for moving objects and digging. Elephants' large ear flaps help to control their body temperature. Their pillar-like legs can carry their great weight. African elephants have larger ears and concave backs while Asian elephants have smaller ears and convex or level backs.</p>
+          <p><%= link_to "Learn More", "https://scotthysell.wixsite.com/myelephants" %></p>
         </div>
       </div>
     </section>
-    <section class="fact-section" id="mate">
-      <header class="fact-header">
-        <h2>The Reproductive Cycle of the Galapagos Tortoise</h2>
-      </header>
+    <section class="fact-section">
       <div class="fact-image">
-        <%= image_tag "images/tortoise-4.jpg" %>
+        <%= link_to image_tag("images/rhino.jpg"), "https://awesomerhinofans.wordpress.com/" %>
       </div>
       <div class="facts">
         <div class="fact">
-          <h3>Number of Offspring</h3>
-          <p>Galapagos tortoises lay 1 to 4 clutches each season, with about 16 eggs each</p>
-        </div>
-        <div class="fact">
-          <h3>Gestational Period</h3>
-          <p>The gestation period is about 4 to 8 months</p>
-        </div>
-        <div class="fact">
-          <h3>How long do the offspring remain with the parent?</h3>
-          <p>Offspring do not remain with their parents. Upon hatching, they take several weeks to dig out and then they are left to fend for themselves.</p>
+          <h3><a href="https://awesomerhinofans.wordpress.com/">Rhinos!</a></h3>
+          <p>Explore with us! Rhinoceroses are large, herbivorous mammals identified by their characteristic horned snouts. The word "rhinoceros" comes from the Greek "rhino" (nose) and "ceros" (horn). There are five species and 11 subspecies of rhino; some have two horns, while others have one.</p>
+          <p><%= link_to "Learn More", "https://awesomerhinofans.wordpress.com/" %></p>
         </div>
       </div>
     </section>
-    <section class="fact-section" id="environment">
-      <header class="fact-header">
-        <h2>Environment</h2>
-      </header>
+    <section class="fact-section">
       <div class="fact-image">
-        <%= image_tag "images/tortoise-5.jpg" %>
+        <%= link_to image_tag("images/eagle.jpg"), "https://peterhuisman2.wixsite.com/eaglefans" %>
       </div>
       <div class="facts">
         <div class="fact">
-          <h3>Description</h3>
-          <p>Galapagos tortoises are about 4 to 5 feet in length, and weigh up to 500 pounds! They breathe about four times per minute, and they cannot breathe underwater.</p>
+          <h3><a href="https://peterhuisman2.wixsite.com/eaglefans">Eagles!</a></h3>
+          <p>Eagles are large, powerfully built birds of prey, with heavy heads and beaks. Most eagles are larger than any other raptors apart from some vultures. Like all birds of prey, eagles have very large, hooked beaks for ripping flesh from their prey, strong, muscular legs, and powerful talons. The beak is typically heavier than that of most other birds of prey. Eagles normally build their nests, called eyries, in tall trees or on high cliffs. Many species lay two eggs, but the older, larger chick frequently kills its younger sibling once it has hatched.</p>
+          <p><%= link_to "Learn More", "https://peterhuisman2.wixsite.com/eaglefans" %></p>
         </div>
+      </div>
+    </section>
+    <section class="fact-section">
+      <div class="fact-image">
+        <%= link_to image_tag("images/cheetah.jpg"), "https://namelessitguy.wixsite.com/cheetah" %>
+      </div>
+      <div class="facts">
         <div class="fact">
-          <h3>Lifespan</h3>
-          <p>Can live to be over 100 years old!</p>
-        </div>
-        <div class="fact">
-          <h3>Interesting Facts</h3>
-          <p>They have lived on the Galapagos Islands for over 3 million years!</p>
+          <h3><a href="https://namelessitguy.wixsite.com/cheetah">Cheetahs!</a></h3>
+          <p>The cheetah is the world’s fastest land animal and Africa’s most endangered big cat. Uniquely adapted for speed, the cheetah is capable of reaching speeds greater than 110 kilometers per hour in just over 3 seconds, and at top speed their stride is 7 meters long. With its long legs and very slender body, the cheetah is quite different from all other cats and is the only member of its genus, Acinonyx. The cheetah’s unique morphology and physiology allow it to attain the extreme speeds for which it’s famous, and is often referred to as the greyhound of cats.</p>
+          <p><%= link_to "Learn More", "https://namelessitguy.wixsite.com/cheetah" %></p>
         </div>
       </div>
     </section>

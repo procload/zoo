@@ -46,37 +46,34 @@
 // -------------------------------------
 
 body {
-  background: transparent url('../images/pattern.jpg') repeat;
 }
 
-h1, h2, p {
-  color: #Fff;
-}
 
 .site-header {
-  background: #f7f7f7;
+  @extend %group;
+  background: #1F7E27;
   padding: rem(10px) 0;
 
   .header-container {
     align-items: center;
     max-width: rem(1200px);
     margin: 0 auto;
-
-    @include respond-to(640px) {
-      display: flex;
-      justify-content: flex-start;
-    }
+  text-align: center;
   }
 
   .logo {
     text-transform: uppercase;
-    color: #555;
+    color: #FFF;
+    display: block;
+    text-align: center;
     font-weight: bold;
     margin-right: rem(24px);
     margin-left: rem(20px);
+    width: 100%;
 
     @include respond-to(640px) {
       margin-left: 0;
+      margin-right: 0;
     }
 
   }
@@ -107,25 +104,6 @@ h1, h2, p {
   margin-left: rem(20px);
   margin-right: rem(20px);
 
-  .fun & {
-    @include grid-column(12);
-  }
-
-  > div {
-    @include respond-to(640px) {
-      @include grid-column(8);
-    }
-  }
-
-  > img {
-    max-width: 200px;
-    max-height: 232px;
-    margin: 0 auto;
-    display: block;
-    @include respond-to(640px) {
-      @include grid-column(4);
-    }
-  }
 }
 
 .header-grid {
@@ -154,9 +132,10 @@ h1, h2, p {
 }
 
 .fact-section {
+  clear: both;
   @extend %group;
   margin-bottom: rem(32px);
-  background: #1F7E27;
+  background: #f7f7f7;
   border: 1px solid darken(#f3f6f9, 5%);
   border-radius: 12px;
   padding: rem(20px);
@@ -173,7 +152,7 @@ h1, h2, p {
 
   img {
     width: 100%;
-    border-radius: 100%;
+    border-radius: 4px;
 
     @include respond-to(560px) {
       width: auto;
@@ -197,9 +176,6 @@ h1, h2, p {
 
 .fact {
   margin-bottom: rem(16px);
-  a, p {
-    color: #FFF;
-  }
 }
 
 h2 {
@@ -210,9 +186,9 @@ h2 {
 .main-image {
   height: rem(200px);
   margin-bottom: rem(24px);
-  background:transparent url('/images/tortoise.jpg') no-repeat 100% 100%;
+  background:transparent url('/images/zoo-one.jpg') no-repeat 100% 100%;
   background-size: cover;
-  background-position: 100% 20%;
+  background-position: 100% 35%;
 
   .diet & {
     background:transparent url('/images/tortoise.jpg') no-repeat 100% 100%;
@@ -222,15 +198,17 @@ h2 {
 }
 
 h2 {
-  color: #FFF;
 }
 h3 {
-  font-size: rem(16px);
-  color: #FFF;
+  font-size: rem(24px);
+  margin-bottom: rem(8px);
+  a:link {
+    color: #555;
+  }
 }
 
 p {
-  font-size: rem(14px);
+  font-size: rem(16px);
 }
 
 .videos {
